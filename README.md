@@ -1,4 +1,4 @@
-# CALENDAR BACKEND
+# COVID-19 BACKEND
 
 ## About This Repo
 
