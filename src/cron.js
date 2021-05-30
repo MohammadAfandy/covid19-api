@@ -8,7 +8,7 @@ const {
   updateDataListProvinces,
 } = require('./services');
 
-cron.schedule('c', async () => {
+cron.schedule('0 18 * * *', async () => {
   console.log('----- CRON UPDATE DATA ----');
   console.log('---- Start Running on ' + moment().format('YYYY-MM-DD HH:mm:ss') + ' -----');
 
