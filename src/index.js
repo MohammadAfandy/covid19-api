@@ -38,9 +38,8 @@ app.get('/total', async (req, res, next) => {
       if (!data_province) {
         data_province = await updateDataProvince();
       }
-      let data = data_province.data.filter((v) => v.province === province);
-      if (!data.length) throw new Error("Invalid Province");
-      data = data[0];
+      let data = data_province.data.find((v) => v.province.toLowerCase() === province.toLowerCase());
+      if (!data) throw new Error("Invalid Province");
       responseData = {
         province: data.province,
         last_date: data_province.last_date,
