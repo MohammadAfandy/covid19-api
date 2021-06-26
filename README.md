@@ -2,7 +2,7 @@
 
 ## About This Repo
 
-This repo is the backend of covid19-react
+This repo is the backend of [covid19-next](https://github.com/MohammadAfandy/covid19-next)
 
 ### Run Project
 
